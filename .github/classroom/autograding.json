@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "1_task0",
+      "setup": "",
+      "run": "python3 -m unittest test_task0.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "1_task1",
+      "setup": "",
+      "run": "python3 -m unittest test_task1.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 14
+    },
+    {
+      "name": "1_task2",
+      "setup": "",
+      "run": "python3 -m unittest test_task2.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 14
+    },
+    {
+      "name": "1_task3",
+      "setup": "",
+      "run": "python3 -m unittest test_task3.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 14
+    },
+    {
+      "name": "1_task4",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "python3 -m unittest test_task4.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 14
+    },
+    {
+      "name": "1_task5",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "python3 -m unittest test_task5.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 14
+    },
+    {
+      "name": "1_task_6",
+      "setup": "",
+      "run": "python3 -m unittest test_task6.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "1_task_7",
+      "setup": "",
+      "run": "python3 -m unittest test_task7.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 14
+    }
+  ]
+}
