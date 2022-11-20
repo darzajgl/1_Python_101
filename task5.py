@@ -1,7 +1,5 @@
 def concat_chars(chars: list):
-    # Uzupełnij wyrażenie w pętli `for` tak, aby zmienna `result` zawierała w sobie
-    # ciąg znaków będący połączeniem wszystkich znaków z listy `chars`
-
+    # uzupelnij wyrazenie w petli for tak, aby 'result' bylo polaczeniem wszystkich znakow z 'chars'
     result: str = ""
 
     for char in chars:
@@ -11,8 +9,8 @@ def concat_chars(chars: list):
 
 
 def concat_chars_not_in_set(chars: list, forbidden_chars: set):
-    # Uzupełnij poniższą pętlę tak, aby `result` było połączeniem znaków z `chars`
-    # z pominięciem znaków znajdujących się w zbiorze `forbidden_chars`
+    # uzupelnij ponizsza petle tak, aby 'result' bylo polaczeniem znakow z 'chars' z pominieciem
+    # znakow znajdujacych sie w 'forbidden_chars'
     result: str = ""
 
     for char in chars:
@@ -25,10 +23,8 @@ def concat_chars_not_in_set(chars: list, forbidden_chars: set):
 
 
 def sum_until(values: list, stop_value: int):
-    # Uzupełnij poniższą pętlę tak, zmienna `result` przyjmowała wartość sumy elementów znajdujących
-    # się w liście `values` przed pierwszym wystąpieniem wartości `stop_value`
-    # Przykład:
-    # Dla `values = [1, 1, 3]` i `stop_value = 3` zmienna `result` powinna przyjąć wartość `2`
+    # uzupelnij ponizsza petle tak, aby 'sum' bylo suma liczb z 'values' ktore znajduja sie w liscie
+    # przed wartoscia 'stop_value'
     result: int = 0
 
     for value in values:
@@ -41,23 +37,19 @@ def sum_until(values: list, stop_value: int):
 
 
 def double_until_value(a: int):
-    # Korzystając z pętli `while`, podwajaj wartość zapisaną w zmiennej `a` aż
-    # przekroczy wartość `100`, przypisz otrzymaną wartość do zmiennej `result`
-    # Przykład: dla `a = 2` `result` powinno przyjąć wartość `128`
-    # Pamiętaj o poprawnym warunku pętli (obecnie `False`)
-
+    # korzystajac z petli while, podwajaj liczbe 'a' az nie przekroczy wartosci 100
+    # pamietaj o poprawnym warunku petli (obecnie False)
     result: int = a
 
-    while a < 100:
-        result *= 2
+    while result < 100:  # zastap False poprawnym wyrazeniem warunkowym
+        result *= 2  # uzupelnij cialo petli
+        print(result)
 
     return result
 
 
 def for_else(values: list):
-    # Uzupełnij poniższą pętlę `for` tak, aby zmienna `result` przyjmowała wartość `False`
-    # jeśli w liście `values` nie ma wartości 10
-
+    # uzupelnij ponizsza petle for tak, aby value bylo False jesli w 'values' nie ma wartosc 10
     result: bool = True
 
     for value in values:
@@ -70,16 +62,15 @@ def for_else(values: list):
 
 
 def list_comprehension_odd():
-    # Uzupełnij poniższe wyrażenie `list comprehension` tak, aby zmienna `result` była
-    # listą zawierającą liczby nieparzyste z zakresu 1 - 9 włącznie
-    result: list = [x for x in range(10) if x % 2 !=0]
+    # uzupelnij ponizsze wyrazenie tak, aby my_list zawieralo tylko liczby nieparzyste
+    result: list = [x for x in range(10) if x % 2 != 0]
 
     return result
 
 
 def list_comprehension_sets(set_a: set, set_b: set):
-    # Korzystając z `list comprehension` wygeneruj listę liczb z zakresu 0 - 20
-    # włącznie pomijając liczby znajdujące się w zbiorze `set_a` lub w zbiorze `set_b`
-    result: list = [x for x in range(21)  if x not in set_a.union(set_b)]
+    # korzystajac z list comprehensions wygeneruj liste licz z zakresu 0 - 20 wlacznie,
+    # ktore nie znajduje sie w set_a ani w set_b
+    result: list = [x for x in range(21) if x not in set_a.union(set_b)]
 
     return result
