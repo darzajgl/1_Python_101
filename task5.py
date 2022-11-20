@@ -1,10 +1,11 @@
 def concat_chars(chars: list):
     # Uzupełnij wyrażenie w pętli `for` tak, aby zmienna `result` zawierała w sobie
     # ciąg znaków będący połączeniem wszystkich znaków z listy `chars`
-    result: str = ""
 
-    for char in chars:
-        ...
+    result: list = ""
+
+    for x in list:
+        list += x
 
     return result
 
@@ -15,7 +16,9 @@ def concat_chars_not_in_set(chars: list, forbidden_chars: set):
     result: str = ""
 
     for char in chars:
-        ...
+        for forbidden_char in chars:
+            if char != forbidden_char:
+                str += char
 
     return result
 
@@ -25,10 +28,13 @@ def sum_until(values: list, stop_value: int):
     # się w liście `values` przed pierwszym wystąpieniem wartości `stop_value`
     # Przykład:
     # Dla `values = [1, 1, 3]` i `stop_value = 3` zmienna `result` powinna przyjąć wartość `2`
-    result: int = 0
+    result: a = 0
 
     for value in values:
-        ...
+        if value == stop_value:
+            break
+        else:
+            a = a + value
 
     return result
 
@@ -41,34 +47,51 @@ def double_until_value(a: int):
 
     result: int = a
 
-    while False:  # Zastąp `False` poprawnym wyrażeniem warunkowym
-        ...  # Uzupełnij ciało pętli
-
+    while a <= 100:
+        a = a*2
     return result
 
 
 def for_else(values: list):
     # Uzupełnij poniższą pętlę `for` tak, aby zmienna `result` przyjmowała wartość `False`
     # jeśli w liście `values` nie ma wartości 10
-    result: bool = True
+
+    result: bool = False
 
     for value in values:
-        ...
-    else:
-        ...
+        if value == 10:
+            bool = True
+    return result
+    # result: bool = True
+    #
+    # for value in values:
+    #     for value in values:
+    #      if value != 10:
+    #          bool = False
+    #          break
+    # else:
+    #     bool = True
 
     return result
-
 
 def list_comprehension_odd():
     # Uzupełnij poniższe wyrażenie `list comprehension` tak, aby zmienna `result` była
     # listą zawierającą liczby nieparzyste z zakresu 1 - 9 włącznie
-    result: list = [x for x in range(10)]
+    result: list = [x for x in range(1,10,2)]
+
     return result
 
 
 def list_comprehension_sets(set_a: set, set_b: set):
     # Korzystając z `list comprehension` wygeneruj listę liczb z zakresu 0 - 20
     # włącznie pomijając liczby znajdujące się w zbiorze `set_a` lub w zbiorze `set_b`
-    result: list = [...]
+    result: list = [x for x in range(21)] #.remove(set_a.union(set_b))
+    for x in list:
+        for i in set_a[:]:
+            if i == x:
+                list.remove(x)
+        for j in set_b[:]:
+            if j == x:
+                list.remove(x)
+
     return result

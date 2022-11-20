@@ -34,7 +34,13 @@ def lazy_scribe(sources: list):
     #   z biblioteczki nie oznacza, że nie można wykorzystać znaku 'a' znajdującego się
     #   dalej w tym samym ciągu
 
+
     result: str = ''
+
+    for elements in sources:
+        for letter in elements:
+            str += letter
+
 
     return result
 

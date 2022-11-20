@@ -4,7 +4,7 @@ def simple_conditional(a: int):
 
     result: bool = False
 
-    if ...:
+    if a > 10:
         result = True
 
     return result
@@ -14,9 +14,9 @@ def zero_comparision(a: int):
     # Uzupełnij poniższe wyrażenie warunkowe tak, aby zmienna result miała wartość
     # 1 gdy zmienna `a` jest większa od 0, -1 gdy mniejsza od 0 i 0 gdy ma wartość 0
 
-    if ...:
+    if a > 0:
         result = 1
-    elif ...:
+    elif a < 0:
         result = -1
     else:
         result = 0
@@ -30,19 +30,38 @@ def list_searching(a: int, b: list):
     # `b`
     result: bool = False
 
-    if ...:
+    if a in b:
         result = True
 
     return result
 
 
 def roman_numerals(a: int):
-    # Napisz instrukcję warunkową, która dla licz z przedziału 1 - 10 przypisze do zmiennej `result`
+    # Napisz instrukcję warunkową, która dla liczb z przedziału 1 - 10 przypisze do zmiennej `result`
     # jej odpowiednik w notacji rzymskiej np. 3 -> "III". Jeśli liczba będzie spoza tego przedziału
     # przypisz do zmiennej `result` pustego stringa ("")
-    result: str = ""
+    result: str = ''
 
     # Tutaj wpisz odpowiednie wyrażenie warunkowe
-    ...
+    if a == 1:
+        result: str = 'I'
+    if a == 2:
+        result: str = 'II'
+    if a == 3:
+        result: str = 'III'
+    if a == 4:
+        result: str = 'IV'
+    if a == 5:
+        result: str = 'V'
+    if a == 6:
+        result: str = 'VI'
+    if a == 7:
+        result: str = 'VII'
+    if a == 8:
+        result: str = 'VIII'
+    if a == 9:
+        result: str = 'IX'
+    if a == 10:
+        result: str = 'X'
 
     return result
