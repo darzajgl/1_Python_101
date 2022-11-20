@@ -46,7 +46,7 @@ def lazy_scribe(sources: list):
     if longest_length == 0:
         return ''
 
-    sources_with_fixed_length = [s + '' * (longest_length - len(s)) for s in sources]
+    sources_with_fixed_length = [s + ' ' * (longest_length - len(s)) for s in sources]
 
     # polączenie stringów i usunięcie spacji
     interweaving_string = ''
